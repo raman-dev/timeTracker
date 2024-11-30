@@ -1,0 +1,132 @@
+@import 'm3colors';
+
+@font-face {
+    font-family: urlFont;
+    src: url("Poppins/poppins_medium.ttf");
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url("Poppins/poppins_semibold.ttf");
+}
+
+body{
+    background-color: $surface-opacity-008;
+    font-family: urlFont;
+}
+
+.title{
+    font-family: titleFont;
+    background-color: $primary-opacity-008;
+    color: $on-primary-opacity-008;
+    border-radius: 16px;
+}
+
+ #addUrlButton{ 
+    border-radius: 16px;
+    font-size: $titlesmall;    
+   
+    background-color: $primary-opacity-008;
+    color: $on-primary-opacity-008;
+}
+
+.list-itemn{
+    
+    .time-itemn{
+        background-color: $secondary-container-opacity-008;
+        border-radius: 16px;
+        margin: 10px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .duration{
+        pointer-events: none; 
+        font-family:titleFont;
+        font-size: $titlemedium;
+        text-align: center;
+
+        background-color: $primary-opacity-008;
+        border-radius: 4px;
+        color: $on-primary-opacity-008;
+    }
+
+    .domain{
+        pointer-events: none;
+        text-align: left;
+        font-size: $titlesmall;
+        white-space: nowrap;
+    }
+
+    .close-btn:hover{
+        cursor: pointer;
+    }
+}
+
+.options-container{
+    background-color: $primary-opacity-008;
+    span{
+        background-color: $on-primary-opacity-008;
+        border-radius: 16px;
+        font-size: $titlemedium;
+        color: $primary-opacity-008;
+    }
+
+    span:hover{
+        cursor: pointer;
+    }
+}
+
+ul {
+    list-style-type: none;
+    // border: 1px solid black;
+    .list-item{
+        background-color: $secondary-container-opacity-008;
+        border-radius: 16px;
+        margin: 10px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+        .duration{
+            pointer-events: none;
+            font-family:titleFont;
+            font-size: $titlemedium;
+            text-align: center;
+
+            background-color: $primary-opacity-008;
+            border-radius: 4px;
+            color: $on-primary-opacity-008;
+        }
+
+        .domain{
+            pointer-events: none;
+            text-align: left;
+            font-size: $titlesmall;
+            white-space: nowrap;
+        }
+
+        .tracking-stop{
+            background-color: $tertiary-opacity-008;
+            color: $on-tertiary-opacity-008;
+            text-align: center;
+            border-radius: 16px;
+            font-size: 14px;
+            margin-right: auto;
+        }
+    }
+}
+
+
+.list-item:hover{
+    cursor: pointer;
+    border: 1px solid $outline-opacity-008;
+    margin: 9px;
+}
+
+#addUrlButton:active{
+    background-color: $primary-30;
+    color: $on-primary-opacity-008;
+}
+
+.active-item{
+    border: 1px solid $outline-opacity-008;
+    margin: 9px;
+}

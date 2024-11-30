@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,kBAAkB;AAoMlB,sBAAsB",
+    "sources": [
+        "m3colors.scss"
+    ],
+    "names": [],
+    "file": "m3colors.css"
+}

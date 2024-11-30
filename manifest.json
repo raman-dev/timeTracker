@@ -1,0 +1,14 @@
+{
+    "name" :"Time Tracker",
+    "description":"Track time spent on specified website",
+    "version":"1.0",
+    "manifest_version":3,
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon": "hourglass_16x16t.png"
+    },
+    "background":{
+        "service_worker": "background.js"
+    },
+    "permissions":["activeTab","tabs","storage","alarms"]
+}

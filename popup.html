@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container d-flex flex-column align-items-center p-2">
+
+        <h2 class="title m-2 w-100 p-1 rounded-2" style="text-align: center;">
+            Time Tracker
+            <div class="options-container collapse" id="options">
+                <span class="px-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#006974">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                    </svg>  
+                    close
+                </span>
+            </div> 
+        </h2>   
+   
+ 
+        <!-- set padding to remove left indent from left-->
+        <ul class="site-list m-1 p-2">
+            <li class="list-itemn" data-bs-toggle="collapse" data-bs-target="#options">
+                <div class="time-item d-flex flex-column p-3">
+                    <div class="duration mb-1"> 
+                        25 min
+                    </div>
+                    <span class="domain m-1">
+                        <img src="https://s2.googleusercontent.com/s2/favicons?domain=stackoverflow.com" />
+                        stackoverflow.com
+                    </span>
+                </div>
+            </li>
+            <!-- <li class="list-itemn d-flex flex-row align-items-center">
+                <div class="time-itemn d-flex flex-column p-3">
+                    <div class="duration mb-1">
+                        25 min
+                    </div>
+                    <span class="domain m-1">
+                        <img src="https://s2.googleusercontent.com/s2/favicons?domain=stackoverflow.com" />
+                        stackoverflow.com
+                    </span> 
+                </div>
+                <div class="close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        fill="#525E7D">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                    </svg>
+                </div>
+            </li>  -->
+        </ul>
+        <button class="btn shadow-sm" id="addUrlButton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+            </svg>
+            add current
+        </button>
+    </div>
+    <script src="popup.js"></script>
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>
